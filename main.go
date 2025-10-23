@@ -223,7 +223,7 @@ func (m Model) View() string {
 			}
 		}
 
-		s += "\n\nPress ESC to quit\n"
+		s += "\n\nPress ESC to quit"
 	case STATS:
 		s += "\n"
 		correct := m.charsTyped - m.mistakes
@@ -249,8 +249,8 @@ func (m Model) View() string {
 			(m.charsTyped - m.mistakes),
 			m.mistakes,
 		)
-		s += "\n"
 	}
 
+	s += "\n"
 	return s
 }
